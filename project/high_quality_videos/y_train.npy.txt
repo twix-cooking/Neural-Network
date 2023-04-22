@@ -1,0 +1,15 @@
+import numpy as np
+
+# Low-quality videos
+x_train_low = np.array([[1, 2], [3, 4], [5, 6]])  # Replace with your own data
+y_train_low = np.array([0, 1, 0])  # Replace with your own data
+
+np.save('low_quality_videos/x_train.npy', x_train_low)
+np.save('low_quality_videos/y_train.npy', y_train_low)
+
+# High-quality videos
+x_train_high = np.array([[7, 8], [9, 10], [11, 12]])  # Replace with your own data
+y_train_high = np.array([1, 0, 1])  # Replace with your own data
+
+np.save('high_quality_videos/x_train.npy', x_train_high)
+np.save('high_quality_videos/y_train.npy', y_train_high)
