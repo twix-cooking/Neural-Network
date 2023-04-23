@@ -1,1 +1,13 @@
-
+<!doctype html>
+<html>
+  <head>
+    <title>Video Processor</title>
+  </head>
+  <body>
+    <h1>Upload a video to process</h1>
+    <form method="post" enctype="multipart/form-data" action="{{ url_for('predict') }}">
+      <input type="file" name="video">
+      <input type="submit" value="Process">
+    </form>
+  </body>
+</html>
